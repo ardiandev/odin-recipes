@@ -57,6 +57,7 @@ nav a:hover {
     font-size: 15px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     line-height: 1.5;
+    text-align: left;
 }
 
 .food-card h2 a{
