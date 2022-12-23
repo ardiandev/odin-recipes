@@ -31,23 +31,40 @@ nav a:hover {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 .food {
     max-width: 1140px;
     margin: 30px auto 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .food-card {
-    max-width: 400px;
-    height: auot;
-    text-align: center;
-
+    width: 33%;
 }
 
-.food-card img{
-    max-width: auto;
+.food-card img {
+    width: 100%;
     height: 250px;
+    object-fit: cover;
 }
+
+.food-card p {
+    font-size: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 1.5;
+}
+
+.food-card h2 a{
+    text-decoration: none;
+    color: black;
+}
+
+.food-card h2 {
+    margin: 5px 0;
+}
+
