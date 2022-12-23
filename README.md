@@ -1,1 +1,1 @@
-# odin-recipes
+This is project from oden-project course. I make a simple recipe web using html and css.
