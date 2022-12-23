@@ -51,15 +51,18 @@ nav a:hover {
 .food {
     max-width: 1140px;
     margin: 30px auto 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 10px;
+
 }
 
 .food-card {
-    width: 33%;
+    box-sizing: border-box;
+    border: 1px solid black;
 }
+
 
 .food-card img {
     width: 100%;
@@ -72,11 +75,17 @@ nav a:hover {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     line-height: 1.5;
     text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-left: 10px;
 }
 
 .food-card h2 a{
     text-decoration: none;
     color: black;
+    margin-left: 10px;
 }
 
 .food-card h2 a:hover {
@@ -89,9 +98,30 @@ nav a:hover {
     margin: 5px 0;
 }
 
+.rm-wrapper {
+    margin: 20px 0;
+    margin-left: 10px;
+}
+
+.rm-wrapper a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.rm-wrapper a:hover {
+    background-color: black;
+    color: white;
+    transition: .3s all ease-in-out;
+}
 
 .recipe-wrapper {
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto 50px  auto;
 }
 
@@ -102,8 +132,10 @@ nav a:hover {
     margin: 20px 0 10px 0;
 }
 
-.recipe-wrapper ol {
+.recipe-wrapper ul, ol {
     margin: 10px 0 0 40px;
+    line-height: 1.5;
+    font-size: 15px;
 }
 
 .recipe-wrapper img {
@@ -117,4 +149,11 @@ nav a:hover {
     text-align: center;
     margin: 20px 0;
     font-size: 25px;
+}
+
+.recipe-wrapper p {
+    font-size: 15px;
+    color: black;
+    margin: 20px 0;
+    line-height: 1.5;
 }
