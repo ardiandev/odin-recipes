@@ -15,16 +15,30 @@ header {
     text-decoration: none;
 }
 
+.brand h1 a {
+    color: black;
+    font-weight: 700;
+}
+
+.brand h1 a:hover {
+    color: blue;
+}
+
 nav a {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     box-sizing: border-box;
     padding: 10px 20px;
+    color: black;
+    border: 1px solid transparent;
+    border-radius: 5px;
+
 }
 
 nav a:hover {
-    background-color: white;
-    color: black;
+    color: blue;
+    text-decoration: underline;
+    transition: .5s all ease-in-out;
 }
 
 *, body {
@@ -65,7 +79,42 @@ nav a:hover {
     color: black;
 }
 
+.food-card h2 a:hover {
+    color: blue;
+    text-decoration: underline;
+    transition: .5s all ease-in-out;
+}
+
 .food-card h2 {
     margin: 5px 0;
 }
 
+
+.recipe-wrapper {
+    max-width: 800px;
+    margin: 0 auto 50px  auto;
+}
+
+.recipe-wrapper h3{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    margin: 20px 0 10px 0;
+}
+
+.recipe-wrapper ol {
+    margin: 10px 0 0 40px;
+}
+
+.recipe-wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+
+.recipe-wrapper h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 25px;
+}
